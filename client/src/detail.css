@@ -1,0 +1,127 @@
+/* detail.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.text h1, .text h2, .text h3 {
+  text-align: left;
+  margin-left: 0; /* Ensure no additional margin is affecting alignment */
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #e0e0e0;
+  margin: 20px 0;
+}
+
+.room-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.large-image-container {
+  width: auto; 
+  padding: 3px; 
+  margin-bottom: 20px; 
+}
+
+.large-image-container img {
+  width: 100%; 
+  max-height: 400px;
+  object-fit: cover; 
+  border-radius: 8px; /* Optional: rounded corners for aesthetics */
+}
+
+
+.room-layout-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 30px;
+  padding: 20px;
+}
+
+.box-container {
+  padding: 10px;
+}
+
+.box-container img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.sidebox-container {
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.price {
+  font-size: 24px;
+  color: #4CAF50;
+}
+
+.date-selection, .guests, .contact-host {
+  margin-bottom: 20px;
+}
+
+.check-in input, .check-out input, .guests input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-host {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.contact-host:hover {
+  background-color: gray;
+}
+
+
+.charge-info {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.amenities-each {
+  background-color: #eee;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+
+#note {
+  color: #888;
+  font-size: 14px;
+  display: block;
+}
+
+#pentagram {
+  width: 100%;
+  border-radius: 8px;
+}

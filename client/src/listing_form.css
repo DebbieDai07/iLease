@@ -1,0 +1,90 @@
+/* listing_form.css */
+.steps-indicator {
+    position: absolute;
+    top: 30%;
+    left: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  .step {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    border-left: 2px solid #ccc;
+  }
+  
+  .step:before {
+    content: attr(data-step-number);
+    position: absolute;
+    left: 0;
+    background-color: #ccc;
+    border-radius: 90%;
+    padding: 5px 10px;
+    text-align: center;
+  }
+  
+  .active-step:before {
+    background-color: #007bff;
+  }
+
+  .question_sec p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px; 
+  }
+  
+  .question_sec div {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 32px; 
+  }
+  
+  .question_sec input, .question_sec label {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .question_sec input[type="text"], .question_sec input[type="date"], .question_sec input[type="number"] {
+    padding: 8px; 
+    border-radius: 20px;
+  }
+  
+  .step-container h1 p {
+    font-family: 'Raleway', sans-serif; 
+    line-height: 113px; 
+    color: #000000;
+  }
+
+  .step-container h1 {
+    font-size: 45px;
+  }
+
+  .step-container {
+    position: absolute;
+    top: 20%;
+  }
+
+  .button-style {
+    background-color: black; /* Green background */
+    color: white;              /* White text */
+    padding: 12px 20px;        /* Padding around the text */
+    border: none;              /* No border */
+    border-radius: 4px;        /* Rounded corners */
+    cursor: pointer;           /* Pointer cursor on hover */
+    outline: none;             /* Remove outline */
+    transition: background 0.3s ease; /* Smooth transition for hover effect */
+  }
+  .listing-form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .step-container {
+    flex: 1;  /* Ensures that the step container can grow and take available space */
+  }
+  
+  .form-navigation {
+    margin-top: auto;  /* Pushes the navigation to the bottom of the container */
+  }
